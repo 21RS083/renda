@@ -40,9 +40,12 @@ function saveScore (name, score) {
     gamescore.save()
          .then(function (){
          //保存成功時の処理
+            console.log("保存に成功しました。");
         })
         .catch(function (error){
          //失敗時の処理
+            console.log("保存に失敗しました。エラー:" + error); 
+
         });
     // ********************************************************
 }
